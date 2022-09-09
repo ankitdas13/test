@@ -9,8 +9,8 @@ body:
   - type: textarea
     id: what-happened
     attributes:
-      label: Describe the bug
-      description: A clear and concise description of what the bug is.
+      label: Describe the Issue
+      description: A clear and concise description of what the issue is.
       placeholder: Tell us what you see!
     validations:
       required: true
