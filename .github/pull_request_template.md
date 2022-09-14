@@ -1,14 +1,9 @@
-## Feature Description / Related Issue
-- Describe your changes
+## Description
+- Description of chang
 
-## Please check if your PR fulfill the following requirement.
-- [ ] Documention
-- [ ] Test cases
-
-## Type of PR
-- [ ] feature
-- [ ] Bug
-- [ ] Issue
+## Detailed Changes
 
 ## Additional Info
-- any additional information or context
+- Type of PR (bugfix, feature)
+- Fixes (issue link)
+- Screenshots (if any)
