@@ -17,8 +17,8 @@ body:
   - type: textarea
     id: repro-steps
     attributes:
-      label: To Reproduce
-      description: Steps to reproduce the behavior
+      label: Steps to reproduce the behavior
+      description: 
       placeholder: |
         1. Fetch a '...'
         2. Update the '....'
