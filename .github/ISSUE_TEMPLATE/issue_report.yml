@@ -3,13 +3,13 @@ description: Create a report to help us improve
 labels: ["issue"]
 body:
   - type: markdown
-    attributes: dfdf
+    attributes:
       value: |
         Thanks for taking the time to fill out this issue report!
   - type: textarea
     id: what-happened
     attributes:
-      label: dfdf
+       label: Describe the Issue
       description: A clear and concise description of what the issue is.
       placeholder: Tell us what you see!
     validations:
