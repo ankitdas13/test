@@ -3,7 +3,7 @@ description: Create a report to help us improve
 labels: ["issue"]
 body:
   - type: markdown
-    attributes:
+    attributes: dfdf
       value: |
         Thanks for taking the time to fill out this issue report!
   - type: textarea
