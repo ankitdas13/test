@@ -17,7 +17,7 @@ body:
         3. See error
     validations:
       required: true 
-   - type: textarea
+  - type: textarea
     id: expected-behavior
     attributes:
       label: Expected behavior
