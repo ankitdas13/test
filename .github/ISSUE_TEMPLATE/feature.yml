@@ -20,15 +20,14 @@ body:
     id: solution
     attributes:
       label: Suggested Solution
-      description:  Describe the solution you'd like. A clear and concise description of what you want to happen.
+      description: 
     validations:
       required: true
   - type: textarea
     id: alternatives
     attributes:
       label: Alternatives
-      description: Describe alternatives you've considered.
-        A clear and concise description of any alternative solutions or features you've considered.
+      description:
     validations:
       required: false
   - type: textarea
