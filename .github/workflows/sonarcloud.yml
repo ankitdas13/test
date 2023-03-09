@@ -13,6 +13,14 @@ jobs:
   build-and-analyze:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Java JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: 8
+          distribution: 'adopt'
       
       - name: Debug Env variable
         run: |
