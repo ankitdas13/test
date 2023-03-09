@@ -14,6 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       
-      - name: Debug Env variable
+      - name: Debug Env variables
         run: |
           echo "Host is ${{ secrets.SONARQUBE_HOST }}"
