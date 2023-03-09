@@ -1,29 +1,19 @@
-# This workflow warns and then closes issues and PRs that have had no activity for a specified amount of time.
-#
-# You can adjust the behavior by modifying this file.
-# For more information, see:
-# https://github.com/actions/stale
-name: Mark stale issues and pull requests
+# This workflow will build a Java project with Maven, run tests with JaCoCo, and analyze the code with SonarCloud
+name: Java CI
 
+# Controls when the workflow will run
 on:
-  schedule:
-  - cron: '21 1 * * *'
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
+# Jobs
 jobs:
-  stale:
-
+  build-and-analyze:
     runs-on: ubuntu-latest
-    permissions:
-      issues: write
-      pull-requests: write
-
     steps:
-    - uses: actions/stale@v5
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        stale-issue-message: 'This issue is stale because it has been open 30 days with no activity. Remove stale label or comment or this will be closed in 5 days'
-        stale-pr-message: 'This Pr is stale because it has been open 30 days with no activity. Remove stale label or comment or this will be closed in 5 days'
-        stale-issue-label: 'Stale'
-        stale-pr-label: 'Stale'
-        days-before-stale: 1
-        days-before-close: 2
+      
+      - name: Debug Env variable
+        run: |
+          echo "Host is ${{ secrets.SONARQUBE_HOST }}"
