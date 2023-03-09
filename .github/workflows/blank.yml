@@ -30,8 +30,7 @@ jobs:
         env:
            SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
            SONAR_HOST: "httsp://sonar.razorpay.com"
-        run: |
-            'echo ${SONAR_HOST} ${SONAR_HOST}'
+        run: 'echo "${SONAR_HOST}" "${SONAR_HOST}"'
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
